@@ -27,6 +27,9 @@
         }
 
         .sub-title {
+            /*block,inline, inline-block*/
+            display: inline-block;
+            /*可以保有margin的間距設定*/
             background-color: #EA906C;
             color: #B31312;
             /* px=pixal*/
@@ -36,10 +39,13 @@
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             border: brown 2px solid;
             padding-left: 12px;
+            margin: 12px;
         }
 
         body {
             background-color: #d9d3e2;
+            background-image: url(images/d2cec990553dabb75a877d8a5725353e.jpg);
+            background-size: contain;
             color: darkblue;
             font-family: 微軟正黑體, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
@@ -63,6 +69,7 @@
         }
 
         .image {
+            display: inline-block;
             background-color: rgb(243, 227, 208);
             padding: 10px;
             /*width每個圖形佔據瀏覽器的百分比*/
@@ -108,7 +115,10 @@
         }
 
         form {
+            width: 60%;
             background-color: darkkhaki;
+            background-image: url("images/6631a88760953e31a506d262f3a5b0dd.jpg");
+            background-size: cover;
             color: black;
             padding: 1rem 0px;
             border-radius: 1rem;
@@ -127,6 +137,20 @@
             background-color: darkgoldenrod;
             width: 100px;
             border-radius: 6px;
+        }
+
+        /*修正a標籤使點擊時變色更換*/
+        /*a:hover 滑鼠指到時更換的標籤顏色 a:active 點擊時的顏色*/
+        a {
+            color: darkcyan;
+        }
+
+        a:hover {
+            color: burlywood;
+        }
+
+        a:active {
+            color: aliceblue;
         }
     </style>
 
