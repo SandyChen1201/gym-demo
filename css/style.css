@@ -1,0 +1,59 @@
+body {
+    background-color: #d9d3e2;
+    color: darkblue;
+    font-family: 微軟正黑體, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.title {
+    /*text-align置中置左置右*/
+    text-align: center;
+    background-color: #FFC5C5;
+    color: #A25772;
+    font-size: 35px;
+    font-family: 標楷體;
+    /*border-radius 園矩形*/
+    border-radius: 12px;
+    /*margin網頁排版間距 上下左右*/
+    margin: 32px 24px;
+    /*padding內間距*/
+    padding: 12px 32px;
+}
+
+.eng-title {
+    font-family: Ink Free;
+}
+
+#container {
+    padding: 1rem;
+}
+
+#post-form {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    width: 60%;
+    background-color: darkkhaki;
+    /*.是本地 ..是跳出本地folder*/
+    background-image: url("../images/7f2d96104ffadeaaef28267d686d0459.jpg");
+    color: black;
+    padding: 1rem 0px;
+    border-radius: 1rem;
+    margin: 6px auto;
+}
+
+input,
+textarea,
+label,
+button {
+    text-align: center;
+    margin: 12px 0;
+    font-size: 15px;
+}
+
+button {
+    background-color: darkgoldenrod;
+    width: 100px;
+    border-radius: 6px;
+}

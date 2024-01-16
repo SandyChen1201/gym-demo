@@ -44,7 +44,7 @@
 
         body {
             background-color: #d9d3e2;
-            background-image: url(images/d2cec990553dabb75a877d8a5725353e.jpg);
+            background-image: url(images/edce9d39b9f2b374be8d5671f11a9a5f.jpg);
             background-size: contain;
             color: darkblue;
             font-family: 微軟正黑體, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -119,7 +119,7 @@
             background-color: darkkhaki;
             background-image: url("images/6631a88760953e31a506d262f3a5b0dd.jpg");
             background-size: cover;
-            color: black;
+            color: white;
             padding: 1rem 0px;
             border-radius: 1rem;
             margin: 6px auto;
@@ -151,6 +151,20 @@
 
         a:active {
             color: aliceblue;
+        }
+
+        @media screen and (max-width:1080px) {
+            form {
+                width: 80%;
+                font-size: 10px;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            form {
+                width: 100%;
+                font-size: 10px;
+            }
         }
     </style>
 
@@ -268,13 +282,13 @@
             <p></p>需要更多資訊?免費索取健身資訊
             <br>前100名還贈送［我愛健身］書籍一本!</p>
             <form action="" method="GET">
-                <label for="User ID">User ID</label>
+                <label for="User ID"> <b> User ID </b></label>
                 <input type="text" id="ID" name="ID" placeholder="First Name+Last Name" required>
                 <p>
-                    <label for="email">E-mail Address</label>
+                    <label for="email"><b>E-mail Address</b></label>
                     <input type="email" id="email" name="E-mail Address" placeholder="please enter E-mail" required>
                 </p>
-                <p><label for="Password">Password</label>
+                <p><label for="Password"><b>Password</b></label>
                     <input type="password" id="Password" name="Password" required>
                 </p>
                 <label for="info">Q&A</label><br>
