@@ -39,14 +39,22 @@
 
         #bmi {
             font-size: 24px;
-            color: rgb(118, 218, 218);
+            color: rgb(233, 200, 129);
             font-family: 'Gabriola';
         }
 
         #comment {
-            font-size: 26px;
-            color: burlywood;
+            font-size: 20px;
+            color: rgb(199, 149, 83);
             font-family: '微軟正黑體';
+        }
+
+        #result {
+            width: 20%;
+            background-color: darkred;
+            margin: 12px auto;
+            border-radius: 20px;
+            padding: 12px 0;
         }
     </style>
 </head>
@@ -63,11 +71,13 @@
         <label for="hight">Hight</label>
         <input type="number" step="0.1" id="hight" name="hight"><br>
         <button type="button" onclick="ClickBMI()">submit</button>
-        <div id="bmi">
-            BMI=
-        </div>
-        <div id="comment">
-            ~數值?~
+        <button type="button" onclick="ClearALL()" style="background-color: coral;">clear</button>
+        <div id="result">
+            <div id="bmi">
+                BMI=?
+            </div>
+            <div id="comment">
+            </div>
         </div>
     </form>
     <div id="link-back">

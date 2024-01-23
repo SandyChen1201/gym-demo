@@ -21,7 +21,6 @@ function ClickBMI() {
     if (weight == "" || hight == "") {
         alert("不可為空值")
     }
-    console.log(bmi);
     BMIEL.innerHTML = "BMI=" + bmi.toFixed(2)
 
     //
@@ -38,9 +37,20 @@ function ClickBMI() {
     } else {
         resultBMI = "重度肥胖"
     }
-    ResultEL.innerHTML = resultBMI
+    ResultEL.innerHTML = `<b>${resultBMI}</b>`
+    console.log(bmi, resultBMI);
 }
+
+function ClearALL() {
+    UserNameEL.value = ""
+    UserWeightEL.value = ""
+    UserHightEL.value = ""
+    BMIEL.innerHTML = "BMI=?"
+    ResultEL.innerHTML = ""
+}
+
 const BMIEL = document.querySelector("#bmi");
 console.log(BMIEL);
 const ResultEL = document.querySelector("#comment");
 console.log(ResultEL);
+//老師是用innerText, innerhtml不影響 只是可以在後面加html語法更改文字表現
