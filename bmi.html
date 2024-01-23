@@ -43,19 +43,22 @@
     <div class="title">計算機<span class="eng-title">BMI ver.01</span></div>
     <form action="" method="GET">
         <p>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name">
+            <label for="username">Name</label>
+            <input type="text" id="username" name="name">
         </p>
         <label for="weight">Weight</label>
         <input type="number" step="0.1" id="weight" name="weight"><br>
         <label for="hight">Hight</label>
         <input type="number" step="0.1" id="hight" name="hight"><br>
-        <button type="submit">submit</button>
+        <button type="submit" onclick="ClickBMI()">submit</button>
 
     </form>
     <div id="link-back">
         <a href="index.html">back to homepage</a>
     </div>
+
+    <script src="./js/bmi.js"></script>
+
 </body>
 
 </html>
