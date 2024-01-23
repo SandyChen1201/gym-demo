@@ -36,6 +36,18 @@
         #link-back {
             text-align: center;
         }
+
+        #bmi {
+            font-size: 24px;
+            color: rgb(118, 218, 218);
+            font-family: 'Gabriola';
+        }
+
+        #comment {
+            font-size: 26px;
+            color: burlywood;
+            font-family: '微軟正黑體';
+        }
     </style>
 </head>
 
@@ -51,7 +63,12 @@
         <label for="hight">Hight</label>
         <input type="number" step="0.1" id="hight" name="hight"><br>
         <button type="button" onclick="ClickBMI()">submit</button>
-
+        <div id="bmi">
+            BMI=
+        </div>
+        <div id="comment">
+            ~數值?~
+        </div>
     </form>
     <div id="link-back">
         <a href="index.html">back to homepage</a>
